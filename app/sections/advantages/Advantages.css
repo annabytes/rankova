@@ -1,0 +1,13 @@
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 136px 100px;
+  gap: 54px;
+}

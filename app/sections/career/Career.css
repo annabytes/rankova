@@ -1,0 +1,33 @@
+.career {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.yellow-wave {
+  position: absolute;
+  bottom: -60px;
+  min-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.career-content {
+  position: relative;
+  bottom: 60px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fill-form-btn {
+  padding: 22px 48px;
+  width: auto;
+  position: relative;
+  bottom: 60px;
+}
+.career-text {
+  font-size: 18px;
+  line-height: 28px;
+}

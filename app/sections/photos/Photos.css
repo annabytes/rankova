@@ -1,0 +1,8 @@
+.photo-container {
+  width: 764px;
+  min-width: 50%;
+  margin-top: 54px;
+}
+.photos .slides-container {
+  gap: 12px;
+}

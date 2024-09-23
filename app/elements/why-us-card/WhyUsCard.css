@@ -1,0 +1,24 @@
+.why-us-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 330px;
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+}
+.card-spot {
+  position: absolute;
+  top: 4px;
+  left: -8px;
+  z-index: -1;
+}
+.icon-container {
+  position: relative;
+}
+.card-title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 800;
+}
+

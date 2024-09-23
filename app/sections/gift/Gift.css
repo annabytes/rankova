@@ -1,0 +1,36 @@
+.gift-card-container {
+  position: relative;
+}
+.gift-card {
+  position: absolute;
+  bottom: 13px;
+  right: 60px;
+  z-index: 2;
+}
+.gift-card-blurred {
+  filter: blur(2px);
+}
+.gift {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 136px 0;
+  gap: 70px;
+  padding-right: 80px;
+
+}
+.gift-card-title {
+  margin-bottom: 24px;
+}
+.gift-card-desc {
+  font-size: 18px;
+  line-height: 28px;
+}
+.gift-card-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.buy-btn {
+    margin-top: 42px;
+}

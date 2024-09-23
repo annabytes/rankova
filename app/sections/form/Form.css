@@ -1,0 +1,43 @@
+.contact-form {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  padding-top: 80px;
+}
+.form-background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+}
+.input-name,
+.input-number {
+  background-color: #f9f5f5;
+  border: 1px solid #838181;
+  padding: 20px 36px;
+  border-radius: 32px;
+  outline: none;
+  width: 400px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.submit-btn {
+  width: 100%;
+}
+.success,
+.success:hover {
+  background-color: #5aca6c;
+}
+.input-number {
+  color: #838181;
+}
+.input-number:focus {
+  color: #000;
+}

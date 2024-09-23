@@ -1,0 +1,6 @@
+.review-photo-container {
+    border: 1px solid #e2e2e2;
+    min-width: 454px;
+    border-radius: 24px;
+    height: fit-content;
+}
