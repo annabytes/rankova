@@ -24,7 +24,7 @@ export const Nav = () => {
         <Link href="#gift-card" className="nav-link">
           Сертифікати
         </Link>
-        <Link href="#contacts" className="nav-link">
+        <Link href="#contact-info" className="nav-link">
           Контакти
         </Link>
         <select name="lang" id="lang">

@@ -39,5 +39,15 @@
 
 .slides-container > div {
   scroll-snap-align: start;
+}
 
+.btn-next,
+.btn-previous {
+  width: 64px;
+  height: 64px;
+  transition: scale 0.2s ease-in-out;
+}
+.btn-next:hover,
+.btn-previous:hover {
+  scale: 0.7;
 }

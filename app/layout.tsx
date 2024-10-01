@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Comfortaa, Nunito } from 'next/font/google';
+import { Comfortaa } from 'next/font/google';
 
 const comfortaa = Comfortaa({
   variable: '--comfortaa',

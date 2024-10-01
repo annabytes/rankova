@@ -79,7 +79,7 @@ export const Form = () => {
             required
             className="input-number"
             alwaysShowMask
-            mask="+380\ 99 99 999"
+            mask="+38 (0\99) 99 99 999"
           ></InputMask>
           <button
             className={`enroll-btn black submit-btn ${

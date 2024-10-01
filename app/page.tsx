@@ -10,6 +10,7 @@ import { WhyUs } from './sections/why-us/WhyUs';
 import { Reviews } from './sections/reviews/Reviews';
 import { Career } from './sections/career/Career';
 import { Gift } from './sections/gift/Gift';
+import { Contacts } from './sections/contacts/Contacts';
 import { QA } from './sections/qa/QA';
 import { Form } from './sections/form/Form';
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Gift />
         <QA />
         <Reviews />
+        <Contacts />
         <Photots />
       </main>
       <footer className={styles.footer}></footer>

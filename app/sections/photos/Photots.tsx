@@ -9,7 +9,7 @@ export const Photots = () => {
     <section className='photos'>
       <Slider header="">
         {photos.map((photo, i) => (
-          <div className="photo-container">
+          <div key={i} className="photo-container">
             <Image
               key={i}
               src={photo.src}
