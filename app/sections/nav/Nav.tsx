@@ -1,3 +1,4 @@
+'use client';
 import { EnrollBtn } from '@/app/elements/enroll-btn/EnrollBtn';
 import Logo from '@/app/img/logo.png';
 import Image from 'next/image';
@@ -8,7 +9,9 @@ import Link from 'next/link';
 export const Nav = () => {
   return (
     <nav className="nav">
-      <Link href="./">
+      <Link
+        href="./#"
+      >
         <Image src={Logo} alt="Ranok" width={200} height={100} />
       </Link>
       <div className="nav-menu">

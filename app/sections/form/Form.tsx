@@ -21,7 +21,7 @@ export const Form = () => {
 
     try {
       await fetch(
-        'https://script.google.com/macros/s/AKfycbxfiZ6YNcduDyb13VvOQ2fpjLIm32aCd2Dja9GvERHlfgqI0XA2zWBsAJmo76uu0DAU/exec',
+        'https://script.google.com/macros/s/AKfycbygGtfx8EEODRuDPrtJ6ZYhpdQXpxuThLf9I3kGiFpwzW_toMalt-KVQuz82EsVr4D2/exec',
         {
           method: 'POST',
           mode: 'no-cors',
@@ -79,7 +79,7 @@ export const Form = () => {
             required
             className="input-number"
             alwaysShowMask
-            mask="+38 (0\99) 99 99 999"
+            mask="+38 \(099) 99 99 999"
           ></InputMask>
           <button
             className={`enroll-btn black submit-btn ${

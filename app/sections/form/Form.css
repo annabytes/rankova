@@ -37,6 +37,7 @@
 }
 .input-number {
   color: #838181;
+  letter-spacing: 2px;
 }
 .input-number:focus {
   color: #000;
