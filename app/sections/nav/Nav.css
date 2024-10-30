@@ -1,26 +1,26 @@
 .nav {
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-  gap: 14px;
-  justify-content: center;
-  padding-top: 8px;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  background-color: #fcfcfc;
-  border-radius: 0 0 44px 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    gap: 14px;
+    justify-content: center;
+    padding-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #fcfcfc;
+    border-radius: 0 0 44px 44px;
 }
 
 .nav-menu {
-  display: flex;
-  border: 1px solid #838181;
-  border-radius: 32px;
-  padding: 18px 24px;
-  gap: 46px;
+    display: flex;
+    border: 1px solid #838181;
+    border-radius: 32px;
+    padding: 18px 24px;
+    gap: 46px;
 }
 
 select {
-  cursor: pointer;
-  outline: none;
+    cursor: pointer;
+    outline: none;
 }
