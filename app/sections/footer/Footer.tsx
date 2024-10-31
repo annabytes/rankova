@@ -1,51 +1,211 @@
-import { EnrollBtn } from "@/app/elements/enroll-btn/EnrollBtn";
+import FacebookHover from "@/app/img/facebook-hover.svg";
+import Facebook from "@/app/img/facebook.svg";
+import InstHover from "@/app/img/inst-hover.svg";
+import Inst from "@/app/img/inst.svg";
+import Logo from "@/app/img/logo.png";
+import TelegramHover from "@/app/img/telegram-hover.svg";
+import Telegram from "@/app/img/telegram.svg";
+import TikTokHover from "@/app/img/tiktok-hover.svg";
+import TikTok from "@/app/img/tiktok.svg";
+import YouTubeHover from "@/app/img/youtube-hover.svg";
+import YouTube from "@/app/img/youtube.svg";
+import Image from "next/image";
+import Link from "next/link";
 import "./Footer.css";
-
 export const Footer = () => {
     return (
         <footer className="footer">
-            <div className="header-content">
-                <svg
-                    className="header-svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="380"
-                    height="82"
-                    viewBox="0 0 380 82"
-                    fill="none">
-                    <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M378 37.31C367.935 18.9648 290.933 17.8046 248.866 5.04395C208.636 -7.15962 187.461 15.7716 136.5 16.1047C85.4806 16.4382 46.99 -9.90332 24 5.04395C0.870916 20.0817 -10.6247 35.2262 13.8124 51.5941C38.1382 67.8873 106.704 61.814 157.048 67.0646C203.646 71.9245 247.473 86.1792 290.224 80.4221C340.81 73.6099 388.57 56.5755 378 37.31Z"
-                        fill="#FFDF18"
-                    />
-                </svg>
-                <h1>Музика для всіх, а не тільки для обраних</h1>
-                <ul>
-                    <li>творчі івенти</li>
-                    <li>заняття з вокалу</li>
-                    <li>заняття з гри на музичних інструментах</li>
-                </ul>
-                <EnrollBtn black />
+            <div className="footer-left">
+                <Link href="./#">
+                    <Image src={Logo} alt="Ranok" width={200} height={100} />
+                </Link>
+
+                <p className="footer-descr">
+                    Музика - для всіх, а не тільки для обраних.
+                </p>
+
+                <Link className="footer-link footer-policy" href="/">
+                    Політика конфіденційності
+                </Link>
             </div>
-            <div className="running-line">
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
-                <span className="running-line-text">
-                    енергонезалежні, працюємо попри відключення
-                </span>
+
+            <div className="footer-right">
+                <nav className="footer-nav">
+                    <h3 className="footer-title">Навігація</h3>
+                    <ul className="footer-list">
+                        <li className="footer-item">
+                            <Link href="#about-us" className="footer-item-link">
+                                Про нас
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link href="#teachers" className="footer-item-link">
+                                Викладачі
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link href="#career" className="footer-item-link">
+                                Вакансії
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link href="#prices" className="footer-item-link">
+                                Вартість
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link
+                                href="#gift-card"
+                                className="footer-item-link">
+                                Сертифікати
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link href="#qa" className="footer-item-link">
+                                Часті питання
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link href="#reviews" className="footer-item-link">
+                                Відгуки
+                            </Link>
+                        </li>
+                        <li className="footer-item">
+                            <Link
+                                href="#contact-info"
+                                className="footer-item-link">
+                                Контакти
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div className="socials-nav">
+                    <h3 className="footer-title">Контакти</h3>
+                    <div className="socials-list">
+                        <Link href="tel:+380978232828" className="footer-phone">
+                            +380 (97) 823 28 28
+                        </Link>
+                        <div className="socials">
+                            <div className="icon-container">
+                                <Link className="" href={""}>
+                                    <div className="icon-box">
+                                        <Image
+                                            className="social-icon"
+                                            src={Inst.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Instagram"
+                                        />
+                                    </div>
+                                    <div className="social-icon-hover icon-box">
+                                        <Image
+                                            src={InstHover.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Instagram"
+                                        />
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="icon-container">
+                                <Link className="" href={""}>
+                                    <div className="social-icon icon-box">
+                                        <Image
+                                            className="social-icon"
+                                            src={Facebook.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Facebook"
+                                        />
+                                    </div>
+                                    <div className="social-icon-hover icon-box">
+                                        <Image
+                                            src={FacebookHover.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Facebook"
+                                        />
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="icon-container">
+                                <Link className="" href={""}>
+                                    <div className="social-icon icon-box">
+                                        <Image
+                                            className="social-icon"
+                                            src={YouTube.src}
+                                            height={44}
+                                            width={44}
+                                            alt="YouTube"
+                                        />
+                                    </div>
+                                    <div className="social-icon-hover icon-box">
+                                        <Image
+                                            src={YouTubeHover.src}
+                                            height={44}
+                                            width={44}
+                                            alt="YouTube"
+                                        />
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="icon-container">
+                                <Link className="" href={""}>
+                                    <div className="social-icon icon-box">
+                                        <Image
+                                            className="social-icon"
+                                            src={TikTok.src}
+                                            height={44}
+                                            width={44}
+                                            alt="TikTok"
+                                        />
+                                    </div>
+                                    <div className="social-icon-hover icon-box">
+                                        <Image
+                                            src={TikTokHover.src}
+                                            height={44}
+                                            width={44}
+                                            alt="TikTok"
+                                        />
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="icon-container">
+                                <Link className="" href={""}>
+                                    <div className="social-icon icon-box">
+                                        <Image
+                                            className="social-icon"
+                                            src={Telegram.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Telegram"
+                                        />
+                                    </div>
+                                    <div className="social-icon-hover icon-box">
+                                        <Image
+                                            src={TelegramHover.src}
+                                            height={44}
+                                            width={44}
+                                            alt="Telegram"
+                                        />
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                        <Link
+                            className="footer-link footer-policy-mobile"
+                            href="/">
+                            Політика конфіденційності
+                        </Link>
+                        <Link
+                            target="_blank"
+                            href="https://www.instagram.com/design_with_anastasiia?igsh=cGlqMHE1NGw1dHp3"
+                            className="footer-item footer-item_link">
+                            Дизайн сайту: Anastasia
+                        </Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );

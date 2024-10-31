@@ -1,8 +1,24 @@
 .photo-container {
-  width: 764px;
-  min-width: 50%;
-  margin-top: 54px;
+    min-width: 49.5%;
 }
 .photos .slides-container {
-  gap: 12px;
+    gap: 12px;
+}
+
+.photo {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+    .photo-container {
+        min-width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .photo-container {
+        min-width: 85%;
+    }
 }

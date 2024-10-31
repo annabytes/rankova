@@ -14,6 +14,7 @@ body {
     margin: 0;
     color: #3e3e3e;
     scroll-behavior: smooth;
+    scroll-padding: 90px;
 }
 
 h2 {
@@ -29,4 +30,11 @@ a {
 
 button {
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }

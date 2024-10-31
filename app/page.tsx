@@ -1,3 +1,4 @@
+import { TickerTape } from "./elements/TickerTape/TickerTape";
 import styles from "./page.module.css";
 import { Advantages } from "./sections/advantages/Advantages";
 import { Career } from "./sections/career/Career";
@@ -17,6 +18,7 @@ export default function Home() {
     return (
         <>
             <Header />
+            <TickerTape />
             <main className={styles.main}>
                 <WhyUs />
                 <OurStory />
