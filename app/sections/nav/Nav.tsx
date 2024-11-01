@@ -195,20 +195,37 @@ export const Nav = () => {
             </div>
             <button className="nav-btn">Записатись</button>
             <button onClick={toggleMenu} className="burger">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 34 34"
-                    fill="none">
-                    <path
-                        d="M27 25.3478V1C27 1 33 3.31884 33 10.2754M19 3.31884H1M19 12.5942H1M9 21.8696H1M27 27.4348C27 30.5096 24.314 33 21 33C17.686 33 15 30.5072 15 27.4348C15 24.3623 17.686 21.8696 21 21.8696C24.314 21.8696 27 24.3623 27 27.4348Z"
-                        stroke="#3E3E3E"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-                </svg>
+                {isOpen ? (
+                    <svg
+                        width="45"
+                        height="44"
+                        viewBox="0 0 45 44"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.4999 11.0001L11.5 33M11.4999 11L33.4998 32.9999"
+                            stroke="#3E3E3E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                ) : (
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 34 34"
+                        fill="none">
+                        <path
+                            d="M27 25.3478V1C27 1 33 3.31884 33 10.2754M19 3.31884H1M19 12.5942H1M9 21.8696H1M27 27.4348C27 30.5096 24.314 33 21 33C17.686 33 15 30.5072 15 27.4348C15 24.3623 17.686 21.8696 21 21.8696C24.314 21.8696 27 24.3623 27 27.4348Z"
+                            stroke="#3E3E3E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                )}
             </button>
         </nav>
     );

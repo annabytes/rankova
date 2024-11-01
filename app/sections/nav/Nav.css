@@ -25,6 +25,9 @@
 select {
     cursor: pointer;
     background-color: #fcfcfc;
+    color: #231f20;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .burger {
@@ -65,7 +68,7 @@ select {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.36px;
-    transition: all;
+    transition: all 0.3s;
 }
 
 .nav-link:hover {
